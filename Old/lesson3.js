@@ -23,15 +23,10 @@ console.log(simpleNumbers);
 
 // Задание #2 - Корзина
 const basket = ['100', '359', '585', '89'];
-function countBasketPrice(array) {
-    let sum = 0;
-    for (let i = 0; i < array.length; i++) {
-        sum += parseInt(array[i]);
-
-    }
-    console.log(sum);
-}
-countBasketPrice(basket)
+const sum = basket.reduce(function (sum, current) {
+    return sum + current
+});
+console.log(sum);
 
 // Задание #3 - for без тела;
 for (let i = -1; i < 9; i++, console.log(i)) { }
