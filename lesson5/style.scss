@@ -1,0 +1,51 @@
+.main-field {
+    display: flex;
+    justify-content: center;
+}
+.all-field {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #000;
+}
+.field-numbers {
+    display: flex;
+}
+.line {
+    display: flex;
+    flex-direction: column;
+}
+.field {
+    padding: 50px;
+}
+
+.black {
+    background-color: #755849;
+}
+.white {
+    background-color: #eae7e4;
+}
+.letters {
+    display: flex;
+    background-color: #eae7e4;
+    border-bottom: solid 5px black;
+    padding-left: 23px;
+}
+.letter {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    background-color: #eae7e4;
+    border-right: solid 5px black;
+}
+.number {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
