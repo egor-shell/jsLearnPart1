@@ -1,0 +1,66 @@
+// Fonts
+@font-face {
+    font-family: "Exo2";
+    src: url("fonts/Exo2-SemiBold.woff2") format("woff2"), url("fonts/Exo2-SemiBold.woff") format("woff"),
+        url("fonts/Exo2-SemiBold.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.mainBlock {
+    background-size: cover;
+    background-image: url(picture/Background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    &__item {
+        &-btn {
+            background: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        &-img {
+            width: 90%;
+        }
+        &-name {
+            margin-top: 30px;
+            text-align: center;
+            font-family: "Exo2";
+            font-size: 48px;
+            color: white;
+        }
+        &-price {
+            text-align: center;
+            margin-top: 30px;
+            font-family: "Exo2";
+            font-size: 48px;
+            color: white;
+        }
+    }
+}
+.cartlist {
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    &__img {
+        cursor: pointer;
+    }
+    &__totalprice {
+        font-family: "Exo2";
+        font-size: 48px;
+        color: white;
+        margin-left: 50px;
+    }
+}
